@@ -45,7 +45,7 @@ class __TwigTemplate_aff237fcff976715449334f604f9f8a0 extends Template
 
         // line 1
         echo "<!DOCTYPE html>
-<html>
+<html lang=\"fr\">
     <head>
         <meta charset=\"UTF-8\">
         <title>";
@@ -62,12 +62,13 @@ class __TwigTemplate_aff237fcff976715449334f604f9f8a0 extends Template
         // line 12
         $this->displayBlock('javascripts', $context, $blocks);
         // line 15
-        echo "    </head>
+        echo "
+    </head>
     <body>
         ";
-        // line 17
-        $this->displayBlock('body', $context, $blocks);
         // line 18
+        $this->displayBlock('body', $context, $blocks);
+        // line 19
         echo "    </body>
 </html>
 ";
@@ -142,7 +143,7 @@ class __TwigTemplate_aff237fcff976715449334f604f9f8a0 extends Template
 
     }
 
-    // line 17
+    // line 18
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -173,13 +174,13 @@ class __TwigTemplate_aff237fcff976715449334f604f9f8a0 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  146 => 17,  136 => 14,  134 => 13,  124 => 12,  114 => 10,  112 => 9,  102 => 8,  83 => 5,  71 => 18,  69 => 17,  65 => 15,  63 => 12,  60 => 11,  57 => 8,  53 => 5,  47 => 1,);
+        return array (  147 => 18,  137 => 14,  135 => 13,  125 => 12,  115 => 10,  113 => 9,  103 => 8,  84 => 5,  72 => 19,  70 => 18,  65 => 15,  63 => 12,  60 => 11,  57 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!DOCTYPE html>
-<html>
+<html lang=\"fr\">
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -192,6 +193,7 @@ class __TwigTemplate_aff237fcff976715449334f604f9f8a0 extends Template
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
+
     </head>
     <body>
         {% block body %}{% endblock %}
