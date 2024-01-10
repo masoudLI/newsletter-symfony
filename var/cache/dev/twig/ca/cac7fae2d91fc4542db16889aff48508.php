@@ -51,12 +51,22 @@ class __TwigTemplate_6c046a60e46b77eb6a582455fa5f7ff4 extends Template
         echo "
 </div>
 
-<p>Pour vous désinscrire, cliquez sur ce lien <a href=\"";
-        // line 7
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("newsletters_unsubscribe", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 7, $this->source); })()), "id", [], "any", false, false, false, 7), "newsletter" => twig_get_attribute($this->env, $this->source, (isset($context["newsletter"]) || array_key_exists("newsletter", $context) ? $context["newsletter"] : (function () { throw new RuntimeError('Variable "newsletter" does not exist.', 7, $this->source); })()), "id", [], "any", false, false, false, 7), "token" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 7, $this->source); })()), "validationToken", [], "any", false, false, false, 7)])), "html", null, true);
-        echo "\">";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("newsletters_unsubscribe", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 7, $this->source); })()), "id", [], "any", false, false, false, 7), "newsletter" => twig_get_attribute($this->env, $this->source, (isset($context["newsletter"]) || array_key_exists("newsletter", $context) ? $context["newsletter"] : (function () { throw new RuntimeError('Variable "newsletter" does not exist.', 7, $this->source); })()), "id", [], "any", false, false, false, 7), "token" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 7, $this->source); })()), "validationToken", [], "any", false, false, false, 7)])), "html", null, true);
-        echo "</a></p>";
+<p>Pour vous désinscrire, cliquez sur ce lien 
+
+<a href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("newsletters_unsubscribe", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 9, $this->source); })()), "id", [], "any", false, false, false, 9), "newsletter" => twig_get_attribute($this->env, $this->source, (isset($context["newsletter"]) || array_key_exists("newsletter", $context) ? $context["newsletter"] : (function () { throw new RuntimeError('Variable "newsletter" does not exist.', 9, $this->source); })()), "id", [], "any", false, false, false, 9), "token" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 9, $this->source); })()), "validationToken", [], "any", false, false, false, 9)])), "html", null, true);
+        echo "\">
+";
+        // line 10
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("newsletters_unsubscribe", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 10, $this->source); })()), "id", [], "any", false, false, false, 10), "newsletter" => twig_get_attribute($this->env, $this->source, (isset($context["newsletter"]) || array_key_exists("newsletter", $context) ? $context["newsletter"] : (function () { throw new RuntimeError('Variable "newsletter" does not exist.', 10, $this->source); })()), "id", [], "any", false, false, false, 10), "token" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 10, $this->source); })()), "validationToken", [], "any", false, false, false, 10)])), "html", null, true);
+        echo "
+
+
+</a>
+
+
+</p>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -86,7 +96,7 @@ class __TwigTemplate_6c046a60e46b77eb6a582455fa5f7ff4 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  56 => 7,  50 => 4,  43 => 1,);
+        return array (  62 => 10,  58 => 9,  50 => 4,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -97,6 +107,15 @@ class __TwigTemplate_6c046a60e46b77eb6a582455fa5f7ff4 extends Template
     {{newsletter.content|raw}}
 </div>
 
-<p>Pour vous désinscrire, cliquez sur ce lien <a href=\"{{ absolute_url(path('newsletters_unsubscribe', {id: user.id, newsletter:newsletter.id, token: user.validationToken})) }}\">{{ absolute_url(path('newsletters_unsubscribe', {id: user.id, newsletter:newsletter.id, token: user.validationToken})) }}</a></p>", "emails/newsletter.html.twig", "/home/massoud/www/Symfony/Newsletter/templates/emails/newsletter.html.twig");
+<p>Pour vous désinscrire, cliquez sur ce lien 
+
+<a href=\"{{ absolute_url(path('newsletters_unsubscribe', {id: user.id, newsletter:newsletter.id, token: user.validationToken})) }}\">
+{{ absolute_url(path('newsletters_unsubscribe', {id: user.id, newsletter:newsletter.id, token: user.validationToken})) }}
+
+
+</a>
+
+
+</p>", "emails/newsletter.html.twig", "/home/massoud/www/Symfony/Newsletter/templates/emails/newsletter.html.twig");
     }
 }
