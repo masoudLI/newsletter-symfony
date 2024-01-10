@@ -118,7 +118,7 @@ class __TwigTemplate_ff46b4496ef628b86040b47cad9a67f5 extends Template
 
     }
 
-    // line 16
+    // line 17
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -128,12 +128,12 @@ class __TwigTemplate_ff46b4496ef628b86040b47cad9a67f5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 17
+        // line 18
         echo "    <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("ckeditor5/ckeditor.js"), "html", null, true);
         echo "\" defer></script>
     <script src=\"";
-        // line 18
+        // line 19
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/ckeditor.js"), "html", null, true);
         echo "\" defer></script>
 ";
@@ -166,7 +166,7 @@ class __TwigTemplate_ff46b4496ef628b86040b47cad9a67f5 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  137 => 18,  132 => 17,  122 => 16,  110 => 13,  106 => 12,  102 => 11,  96 => 8,  92 => 7,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  137 => 19,  132 => 18,  122 => 17,  110 => 13,  106 => 12,  102 => 11,  96 => 8,  92 => 7,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -185,6 +185,7 @@ class __TwigTemplate_ff46b4496ef628b86040b47cad9a67f5 extends Template
         {{form_row(form.categories)}}
     {{form_end(form)}}
 {% endblock %}
+
 
 {% block javascripts %}
     <script src=\"{{ asset('ckeditor5/ckeditor.js') }}\" defer></script>
